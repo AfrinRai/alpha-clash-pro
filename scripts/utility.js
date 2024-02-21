@@ -9,6 +9,11 @@ function showElementById(elementId) {
     element.classList.remove('hidden');
 }
 
+function setBackgroundColorById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
+
 
 function getARandomAlphabet() {
     // create an alphabet array
@@ -22,5 +27,5 @@ function getARandomAlphabet() {
 
     const alphabet = alphabetArray[index];
     // console.log(index, alphabet);
-    return index;
+    return alphabet;
 }
